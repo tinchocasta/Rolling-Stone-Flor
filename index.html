@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Rolling Stone Fest 2026</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="language" content="es">
+    <link rel="stylesheet" href="./estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- BARRA DE PROGRESO DE SCROLL -->
+    <div id="scroll-progress"></div>
+
+    <!-- HEADER -->
+    <header>
+        <a href="#inicio" class="logo-fest">
+            <img src="./imagenes/logo-festival.png" alt="Logo Rolling Stone Fest">
+        </a>
+
+        <input type="checkbox" id="menu-check">
+
+        <label for="menu-check" class="menu-icono" aria-label="Abrir menú">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </label>
+
+        <nav>
+            <ul>
+                <li><a href="#festival" class="fuente-bold nav-link">Sobre el festival</a></li>
+                <li><a href="#ubicacion" class="fuente-bold nav-link">Ubicación</a></li>
+                <li><a href="#preguntas" class="fuente-bold nav-link">Preguntas</a></li>
+                <li><a href="#beneficios" class="fuente-bold nav-link">Beneficios</a></li>
+                <li><a href="#registrate" class="boton-nav nav-link">Registrate</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- PORTADA -->
+    <section id="inicio" class="Portada">
+        <div class="portada-contenido reveal-fade-up">
+            <h1>Viví el <span class="resaltado">festival</span> que va a marcar el año</h1>
+            <p class="resaltado3">Un evento único que reúne a los artistas más destacados del momento te espera este <span class="resaltado2">viernes 13 y sábado 14 de noviembre</span>, con apertura de puertas a partir de las <span class="resaltado2">14:00 hs</span>. Enterate antes que nadie de la preventa exclusiva y las actividades complementarias.</p>
+            <a href="#registrate" class="boton-portada">Registrate para recibir novedades</a>
+        </div>
+        <div class="portada-scroll-hint">
+            <span>↓</span>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 1: FESTIVAL -->
+    <section class="seccion1" id="festival">
+        <h2 class="reveal-fade-up">Sobre el festival</h2>
+
+        <div class="grillaSec1">
+            <div class="contenedor-lineup reveal-slide-left">
+                <img src="./imagenes/flyer-lineup.png" alt="lineup" class="lineup" id="btn-lineup-popup" title="Ver lineup completo">
+                <div class="lineup-overlay">
+                    <span>Ver lineup completo</span>
+                </div>
+            </div>
+
+            <div class="texto reveal-slide-right">
+                <h3>Acceso anticipado y contenido exclusivo</h3>
+                <p>Al registrarte vas a poder acceder a información exclusiva sobre la preventa y las actividades complementarias. Además, vas a recibir notificaciones anticipadas con contenido exclusivo de los artistas que participan en este evento.</p>
+
+                <h3>Una experiencia musical única</h3>
+                <p>Este festival reúne a algunos de los artistas más relevantes de la escena musical actual en una experiencia pensada para descubrir, conectar y disfrutar en vivo. Durante varios días, artistas consagrados y emergentes comparten un mismo espacio.</p>
+
+                <h3>Formá parte de la comunidad</h3>
+                <p>Sumate a la comunidad y asegurate de no perderte ninguna novedad. Vas a ser de las primeras personas en enterarte de todo lo que estamos preparando.</p>
+            </div>
+        </div>
+
+        <section class="seccion-contador reveal-fade-up">
+            <h2>Faltan...</h2>
+            <div class="contador">
+                <div class="bloque">
+                    <div class="caja">
+                        <span id="dias">00</span>
+                    </div>
+                    <p>Días</p>
+                </div>
+                <div class="bloque">
+                    <div class="caja">
+                        <span id="horas">00</span>
+                    </div>
+                    <p>Horas</p>
+                </div>
+                <div class="bloque">
+                    <div class="caja">
+                        <span id="minutos">00</span>
+                    </div>
+                    <p>Minutos</p>
+                </div>
+                <div class="bloque">
+                    <div class="caja">
+                        <span id="segundos">00</span>
+                    </div>
+                    <p>Segundos</p>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- SECCIÓN 2: UBICACIÓN -->
+    <section class="seccion2" id="ubicacion">
+        <h2 class="reveal-fade-up">Ubicación</h2>
+        <h4 class="reveal-fade-up">Hipódromo de San Isidro, Buenos Aires</h4>
+        <div class="reveal-fade-up mapa-wrapper">
+            <iframe class="mapa" src="https://maps.google.com/?output=embed&q=Hipodromo+de+San+Isidro%2C+Buenos+Aires&z=8" loading="lazy" title="Mapa Hipódromo de San Isidro"></iframe>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 3: PREGUNTAS -->
+    <section class="seccion3" id="preguntas">
+        <h2 class="reveal-fade-up">Preguntas frecuentes</h2>
+        <h4 class="reveal-fade-up">Resolvé tus dudas antes de registrarte</h4>
+        <section class="grillaFAQ reveal-fade-up">
+            <div class="fila">
+                <div class="pregunta-header">
+                    <p class="pregunta">¿Desde qué edad se puede ingresar al festival?</p>
+                    <span class="faq-icon">+</span>
+                </div>
+                <p class="respuesta">El ingreso está habilitado a partir de los 16 años, presentando DNI.</p>
+            </div>
+            <div class="fila">
+                <div class="pregunta-header">
+                    <p class="pregunta">¿A qué hora abre el predio?</p>
+                    <span class="faq-icon">+</span>
+                </div>
+                <p class="respuesta">Las puertas se habilitan a las 14:00 hs.</p>
+            </div>
+            <div class="fila">
+                <div class="pregunta-header">
+                    <p class="pregunta">¿A qué hora finaliza?</p>
+                    <span class="faq-icon">+</span>
+                </div>
+                <p class="respuesta">La jornada se extenderá hasta las 22.00 hs.</p>
+            </div>
+            <div class="fila">
+                <div class="pregunta-header">
+                    <p class="pregunta">¿Se puede ingresar con comida o bebida?</p>
+                    <span class="faq-icon">+</span>
+                </div>
+                <p class="respuesta">No está permitido el ingreso con comida ni bebida al predio.</p>
+            </div>
+            <div class="fila">
+                <div class="pregunta-header">
+                    <p class="pregunta">¿Está permitido ingresar con mochilas o bolsas?</p>
+                    <span class="faq-icon">+</span>
+                </div>
+                <p class="respuesta">Sí, se permite el ingreso con mochilas pequeñas, sujetas a control en el acceso.</p>
+            </div>
+            <div class="fila">
+                <div class="pregunta-header">
+                    <p class="pregunta">¿Qué pasa si llueve?</p>
+                    <span class="faq-icon">+</span>
+                </div>
+                <p class="respuesta">El evento se realiza aunque llueva, salvo que las condiciones climáticas representen un riesgo para el público o los artistas.</p>
+            </div>
+        </section>
+    </section>
+
+    <!-- SECCIÓN 4: BENEFICIOS -->
+    <section class="seccion4" id="beneficios">
+        <h2 class="reveal-fade-up">Beneficios de registrarte</h2>
+        <h4 class="reveal-fade-up">Todo lo que obtenes al dejar tus datos</h4>
+        <div class="contenedorTarjetas">
+            <div class="tarjeta reveal-fade-up" style="--delay: 0ms">
+                <img src="./imagenes/tickets2.png" alt="tickets">
+                <h4>Acceso anticipado a la venta de entradas.</h4>
+            </div>
+            <div class="tarjeta reveal-fade-up" style="--delay: 100ms">
+                <img src="./imagenes/artista2.png" alt="artista">
+                <h4>Lineup con artistas nacionales e internacionales.</h4>
+            </div>
+            <div class="tarjeta reveal-fade-up" style="--delay: 200ms">
+                <img src="./imagenes/entrevista2.png" alt="entrevista">
+                <h4>Información exclusiva del evento.</h4>
+            </div>
+            <div class="tarjeta reveal-fade-up" style="--delay: 300ms">
+                <img src="./imagenes/cartas2.png" alt="cartas">
+                <h4>Novedades directo a tu mail.</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN 5: FORMULARIO -->
+    <section class="formulario" id="registrate">
+        <div class="carta reveal-fade-up">
+            <h1>Recibí <span class="resaltado">novedades</span> del festival</h1>
+            <h4>Registrate y enterate antes que nadie de todas las novedades.</h4>
+
+            <form id="form-registro" action="#" novalidate>
+                <div class="grillaForm">
+                    <div class="campo">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Escribí tu nombre" autocomplete="given-name">
+                        <span class="campo-error" id="error-nombre"></span>
+                    </div>
+                    <div class="campo">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="Escribí tu email" autocomplete="email">
+                        <span class="campo-error" id="error-email"></span>
+                    </div>
+                    <div class="campo">
+                        <label>Género musical preferido:</label>
+                        <div class="dropdown">
+                            <button type="button" class="dropbtn" id="btn-genero">Seleccionar géneros ▼</button>
+                            <div class="dropdown-content" id="dropdown-genero">
+                                <label><input type="checkbox" name="genero" value="nacional"> Rock nacional</label>
+                                <label><input type="checkbox" name="genero" value="rock"> Rock clásico</label>
+                                <label><input type="checkbox" name="genero" value="pop"> Pop</label>
+                                <label><input type="checkbox" name="genero" value="indie"> Indie</label>
+                                <label><input type="checkbox" name="genero" value="electronica"> Electrónica</label>
+                                <label><input type="checkbox" name="genero" value="urbano"> Trap / Urbano</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="campo">
+                        <label>¿Cómo te enteraste del evento?:</label>
+                        <div class="dropdown">
+                            <button type="button" class="dropbtn" id="btn-fuente">Seleccionar opción ▼</button>
+                            <div class="dropdown-content" id="dropdown-fuente">
+                                <label><input type="radio" name="fuente" value="rrss"> Anuncios en redes sociales</label>
+                                <label><input type="radio" name="fuente" value="newsletter"> Mails / Newsletters</label>
+                                <label><input type="radio" name="fuente" value="recomendacion"> Recomendación</label>
+                                <label><input type="radio" name="fuente" value="noticias"> Páginas de noticias</label>
+                                <label><input type="radio" name="fuente" value="otros"> Otros</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="boton-submit">QUIERO RECIBIR MÁS NOVEDADES</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>© Rolling Stone Fest 2026</p>
+    </footer>
+
+    <!-- ===== POP-UP: LINEUP ===== -->
+    <div class="popup-overlay" id="popup-lineup" role="dialog" aria-modal="true" aria-label="Lineup completo">
+        <div class="popup-contenido popup-lineup-contenido">
+            <button class="popup-cerrar" id="cerrar-lineup" aria-label="Cerrar">✕</button>
+            <img src="./imagenes/flyer-lineup.png" alt="Lineup completo Rolling Stone Fest 2026">
+        </div>
+    </div>
+
+    <!-- ===== POP-UP: CONFIRMACIÓN REGISTRO ===== -->
+    <div class="popup-overlay" id="popup-confirmacion" role="dialog" aria-modal="true" aria-label="Registro confirmado">
+        <div class="popup-contenido popup-confirmacion-contenido">
+            <div class="popup-icono">🎸</div>
+            <h2>¡Ya estás dentro!</h2>
+            <p>Te registraste con éxito. Vas a ser de las primeras personas en recibir novedades del <strong>Rolling Stone Fest 2026</strong>.</p>
+            <p class="popup-sub">Revisá tu casilla de correo en los próximos días.</p>
+            <button class="boton-popup-ok" id="cerrar-confirmacion">¡Perfecto!</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
